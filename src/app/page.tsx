@@ -1,16 +1,17 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Navigation from '@/components/layout/Navigation';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
+      <Navigation />
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center">
-
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-bg.jpg"
-            alt="인천공항 렌트카"
+            src="/images/airport-bg.jpg"
+            alt="차렌트카"
             fill
             className="object-cover"
             priority
